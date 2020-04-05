@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-     var login: String!
+    var login: String?
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func goBackTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "uwindSegue", sender: nil)
+        performSegue(withIdentifier: "unwindSegue", sender: nil)
     }
     
 }

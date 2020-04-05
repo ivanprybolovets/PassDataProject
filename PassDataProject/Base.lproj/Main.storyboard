@@ -70,10 +70,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="me3-gu-RRg"/>
                     <connections>
                         <outlet property="loginTF" destination="os6-8W-pVa" id="ZfW-d9-HHR"/>
                         <outlet property="passwordTF" destination="lT1-GO-DFu" id="MyL-JV-CIw"/>
-                        <segue destination="i8q-QF-Tam" kind="show" identifier="datailSegue" id="CQB-ge-0FR"/>
+                        <outlet property="returnLabel" destination="Ad7-Mz-awb" id="dPb-8z-ABh"/>
+                        <segue destination="i8q-QF-Tam" kind="show" identifier="detailSegue" id="Dqx-72-e09"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,9 +123,11 @@
                     <navigationItem key="navigationItem" id="Nhp-bz-QtQ"/>
                     <connections>
                         <outlet property="label" destination="Sf1-mp-cip" id="S6r-dv-Lwq"/>
+                        <segue destination="piW-50-xml" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="NK1-JY-ryy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mga-YY-Hez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="piW-50-xml" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1013.0434782608696" y="129.61956521739131"/>
         </scene>
